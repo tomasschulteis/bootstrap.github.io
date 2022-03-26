@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@100&family=Shizuru&family=Suravaram&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {font-size: 62.5%;}
+
+body { display: grid;
+grid-template-rows: auto 1fr auto;
+min-height: 100vh;background-image: linear-gradient(to bottom, #8c2222, #973a4b, #99546e, #976e89, #968699, #9c909f, #a299a4, #a8a3aa, #b0a3ad, #baa2ad, #c5a2a9, #cea2a2);}
+
+ul { list-style-type: none;}
+a {text-decoration: none; color: inherit; display: inline-block;
+padding: 0px; 
+
+}
+
+.flex-row {display: flex;}
+.flex-column {display: flex; flex-direction: column;}
+.container { max-width: 1080px; margin:0 auto}
+
+
+header .navbar { min-height: 10vh; justify-content: space-between; align-items: center; padding: 0.2rem; flex-wrap: wrap;}
+
+header .logo {flex-basis: 30%;}
+header .menu__item { text-decoration: none;}
+.menu .menu__item .menu__link {font-size: 2.5em; padding: 1rem; color: #f7f7f7;}
+.menu .menu__item .menu__link:hover {color: #727272;}
+header .menu {flex-basis: 40%; justify-content: space-between; }
+.subtitulo { background-color: #443c3c;
+    color: #ffffffe0;
+    text-align: center;
+    font-size: 1.5em;
+    animation: unefecto infinite ease-in-out 2s;}
+.presentation { gap: 2rem;
+align-items: center;
+padding: 0 2rem;}
+.presentation__badge {flex-basis: 50%; min-width: 320px}
+.img {width: 100%}
+
+
+.presentation__text {flex-basis: 50%; 
+    background-color: #727272; 
+    color: #f7f7f7; border-style: solid; border-color: #8C2222;
+    font-size: 2.0em;
+}
+.presentation__link {text-align: center; font-size: 1.6em;}
+#paragraph {font-size: 0.9em;}
+
+
+
+
+
+footer {background-color: #443c3c;}
+footer .fondodos { min-height: 10vh; justify-content: space-between; align-items: center; padding: 0.2rem; flex-wrap: wrap;}
+footer .logo2 {flex-basis: 30%;}
+footer .menu__item2 { text-decoration: none;}
+.navfooter .menu__item2 .menu__link2 {font-size: 2.5em; padding: 1rem; color: #f7f7f7;}
+.navfooter .menu__item2 .menu__link2:hover {color: #727272;}
+footer .navfooter {flex-basis: 40%; justify-content: center;}
+.titulo3 {text-align: center; color: #f7f7f7;}
+
+
+
+@media screen and (max-width: 768px)
+{ header {padding: 2em;}
+header .navbar{flex-direction: column; justify-content: center;}
+    .menu {font-size: 0.8em;} 
+    .subtitulo {font-size: 1.0em;} 
+#imagen {flex-grow: 1;}    
+.presentation {flex-wrap: wrap;
+    flex-direction: column; font-size: 1.8em;  text-align: justify;} 
+.presentation__text {font-size: 0.9em; display: flex; flex-direction: column; flex-grow: 1; text-align: center;}
+footer {padding: 2em;}
+footer .fondodos {flex-direction: column; justify-content: center;}  
+.navfooter {font-size: 00.8em;}  
+}
+.navfooter >li >a:hover {color: #443c3c;}
+.presentation__link {font-size: 1.0;}
+.paragraph {font-size: 0.6em;}
+
+@keyframes unefecto {
+    0% { background-color: #727272;}
+  }
